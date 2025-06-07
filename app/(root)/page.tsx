@@ -63,7 +63,7 @@ const Home = () => {
                     </div>
 
                     <div>
-                        <Link href="https://www.linkedin.com/in/your-profile" target="_blank"><FaLinkedin className="w-5 h-5 rounded-full" /></Link>
+                        <Link href="https://www.linkedin.com/in/ashish-kumar-singh-36918836a/" target="_blank"><FaLinkedin className="w-5 h-5 rounded-full" /></Link>
                     </div>
 
                     <div>

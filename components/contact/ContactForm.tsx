@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react'
+import toast from 'react-hot-toast';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -9,10 +10,27 @@ const ContactForm = () => {
         message: ''
     });
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         console.log('Form submitted:', formData);
         // Handle form submission here
+        const SendForm = await fetch('http://localhost:3000/api/sendmessage', {
+            method: 'POST',
+            body: JSON.stringify(formData)
+        })
+        const resdata = await SendForm.json()
+        if (resdata.success) {
+            toast.success("Sended Successfully!!");
+        }
+        else {
+            toast.error("Something went wrong");
+        }
+
+        setFormData({
+            name: '',
+            email: '',
+            message: ''
+        });
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

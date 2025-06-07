@@ -70,7 +70,7 @@ const Contact = () => {
                                                 <FaGithub className="w-5 h-5 rounded-full" />
                                             </button>
                                         </Link>
-                                        <Link href="https://www.linkedin.com/in/your-profile" target="_blank">
+                                        <Link href="https://www.linkedin.com/in/ashish-kumar-singh-36918836a/" target="_blank">
                                             <button className="cursor-pointer w-8 sm:w-10 h-8 sm:h-10 bg-blue-500/20 rounded-full flex items-center justify-center hover:bg-blue-500/30 transition-colors">
                                                 <FaLinkedin className="w-5 h-5 rounded-full" />
                                             </button>
