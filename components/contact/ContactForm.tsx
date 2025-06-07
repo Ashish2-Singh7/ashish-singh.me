@@ -14,7 +14,7 @@ const ContactForm = () => {
         e.preventDefault();
         console.log('Form submitted:', formData);
         // Handle form submission here
-        const SendForm = await fetch('http://localhost:3000/api/sendmessage', {
+        const SendForm = await fetch('https://ashish-singh-me.vercel.app/api/sendmessage', {
             method: 'POST',
             body: JSON.stringify(formData)
         })

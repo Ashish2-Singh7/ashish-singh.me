@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation';
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
@@ -33,4 +34,8 @@ export async function POST(request: Request) {
         console.log(process.env.EMAIL_PASS);
         return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
     }
+}
+
+export function GET() {
+    return notFound(); // acts like the route doesn't exist
 }
