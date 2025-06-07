@@ -105,6 +105,9 @@ const Skills = () => {
                             Technologies I've learned through hands-on projects and continuous practice
                         </p>
                     </div>
+                    {visibleCategories.length ===0 && <p className="text-center sm:hidden text-lg sm:text-xl text-gray-100/10 max-w-2xl mx-auto">
+                        Move Scroller Down to see
+                    </p>}
 
                     {categories.map((category, categoryIndex) => {
                         const categorySkills = skills.filter(skill => skill.category === category);
