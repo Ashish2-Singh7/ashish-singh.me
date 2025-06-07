@@ -60,19 +60,6 @@ const NotFound = () => {
                             View Projects
                         </Link>
                     </div>
-
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
-                        <Link href="/" className="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm">Home</Link>
-                        <Link href="/about" className="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm">About</Link>
-                        <Link href="/skills" className="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm">Skills</Link>
-                        <Link href="/contact" className="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm">Contact</Link>
-                    </div>
-                </div>
-            </div>
-
-            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-                <div className="w-6 h-10 border-2 border-blue-400/40 rounded-full flex justify-center">
-                    <div className="w-1 h-3 bg-blue-400/60 rounded-full mt-2 animate-pulse" />
                 </div>
             </div>
         </div>
